@@ -46,7 +46,6 @@ for(let link of links){
   link.addEventListener('click', titleClickHandler);
 }
 
-
 const optArticleSelector = '.post',
       optTitleSelector = '.post-title',
       optTitleListSelector = '.titles';
@@ -54,8 +53,13 @@ const optArticleSelector = '.post',
 function generateTitleLinks(){
 
   console.log('Wywołano funkcję generateTitleLinks');
+  
+  
   /* remove contents of titleList */
-
+   const titleList = document.querySelector(optTitleListSelector);
+   titleList.innerHTML = '';
+   console.log('Clear');
+  
 
   /* for each article */
 
@@ -73,7 +77,7 @@ function generateTitleLinks(){
     /* create HTML of the link */
 
 
-    
+
     /* insert link into titleLinks */
 
 
