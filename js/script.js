@@ -60,6 +60,7 @@ function generateTitleLinks(){
    titleList.innerHTML = '';
    console.log('Clear');
   
+  let html = '';
 
   /* for each article */
    const articles = document.querySelectorAll(optArticleSelector);
@@ -82,9 +83,11 @@ function generateTitleLinks(){
 
 
     /* insert link into titleLinks */
-    titleList.innerHTML = titleList.innerHTML + linkHTML;
+    html = html + linkHTML;
+    console.log(html);
    }
 
+   titleList.innerHTML = html;
    
 }
 
