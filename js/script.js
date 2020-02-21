@@ -104,11 +104,11 @@ function generateTags(){
     /* make html variable with empty string */
 
     /* get tags from data-tags attribute */
-  
+
     /* split tags into array */
 
     /* START LOOP: for each tag */
-      
+
       /* generate html of the link */
 
       /* add generated code to html variable */
@@ -120,4 +120,4 @@ function generateTags(){
   /* END LOOP: for every article: */
 }
 
-generateTags();
+generateTags(); 
